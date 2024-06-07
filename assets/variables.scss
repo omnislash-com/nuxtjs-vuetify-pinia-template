@@ -1,0 +1,10 @@
+$primary-color: #e5b15c;
+
+// settings.scss
+@forward 'vuetify/settings' with (
+  // $button-color: green,
+  $button-height: 40,
+  // $button-font-weight: 500,
+  // $card-border-radius: 20px,
+  // $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px)
+);
