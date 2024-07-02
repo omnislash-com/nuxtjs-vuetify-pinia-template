@@ -62,14 +62,14 @@ export default defineNuxtConfig({
     ],
     '@pinia-plugin-persistedstate/nuxt',
   ],
-  imports: {
-    dirs: ['./stores'],
-  },
   piniaPersistedstate: {
     cookieOptions: {
       sameSite: 'strict',
     },
     storage: 'localStorage',
+  },
+  pinia: {
+    storesDirs: ['./stores/**'],
   },
   sourcemap: {
     server: false,
